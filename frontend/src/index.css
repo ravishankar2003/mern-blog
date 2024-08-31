@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ql-editor{
+    font-size: 1rem;
+    min-height: 200px;
+}
+
+
+.post-content p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .post-content h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin: 1.5rem 0;
+  }
+  
+  .post-content h2 {
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    margin: 1.5rem 0;
+  }
+  
+  .post-content a {
+    color: rgb(73, 149, 199);
+    text-decoration: underline;
+  }
+  
+  .post-content a:hover {
+    text-decoration: underline;
+  }
+  
+  .dark .post-content a {
+    color: red;
+  }
+
+
+  .special-block {
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent black */
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+    font-family: monospace;
+    font-size: 0.95rem;
+    overflow-x: auto; /* Ensures long content is scrollable */
+}
+
+
+.read-only-editor .ql-toolbar {
+  display: none; /* Hide the toolbar */
+}
+
+.read-only-editor .ql-container {
+  border: none !important; /* Remove any borders */
+  box-shadow: none !important; /* Remove any box shadows */
+}
+
+.read-only-editor .ql-editor {
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  background: transparent; /* Make the background transparent */
+}
