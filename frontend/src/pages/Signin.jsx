@@ -38,7 +38,7 @@ const Signin = () => {
         const { access_token , ...rest} = data
         localStorage.setItem("access_token", access_token)
         dispatch(signinsuccess(rest));
-        navigate('/');
+        navigate('/mern-blog');
       } else {
         dispatch(signinfailure(data.message || 'Something went wrong'));
       }
@@ -95,7 +95,7 @@ const Signin = () => {
           </form>
           <div className='flex gap-2 text-sm mt-2 px-6'>
             <span>Don't have an account?</span>
-            <Link to='/sign-up' className='text-blue-500'>Sign Up</Link>
+            <Link to='/mern-blog/sign-up' className='text-blue-500'>Sign Up</Link>
           </div>
         </div>
       </div>

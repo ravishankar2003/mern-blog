@@ -72,17 +72,17 @@ const Dashpposts = () => {
                 {posts.map((post) => (
                   <tr key={post._id} className="hover:bg-gray-50 cursor-pointer">
                     <td className="p-3 pl-5">
-                      <Link to={`/post/${post.slug}`} className="block w-full h-full">
+                      <Link to={`/mern-blog/post/${post.slug}`} className="block w-full h-full">
                         {new Date(post.updatedAt).toLocaleDateString()}
                       </Link>
                     </td>
                     <td className="p-3">
-                      <Link to={`/post/${post.slug}`} className="block w-full h-full">
+                      <Link to={`/mern-blog/post/${post.slug}`} className="block w-full h-full">
                         <img src={post.image} alt={post.title} className="h-12 w-15 object-cover" />
                       </Link>
                     </td>
                     <td className="p-3 max-w-sm truncate">
-                      <Link to={`/post/${post.slug}`} className="block w-full h-full">
+                      <Link to={`/mern-blog/post/${post.slug}`} className="block w-full h-full">
                         {post.title}
                       </Link>
                     </td>
@@ -93,7 +93,7 @@ const Dashpposts = () => {
                       }}>Delete</button>
                     </td>
                     <td className="p-3">
-                      <Link to={`/updatepost/${post._id}`} className="text-blue-500">Edit</Link>
+                      <Link to={`/mern-blog/updatepost/${post._id}`} className="text-blue-500">Edit</Link>
                     </td>
                   </tr>
                 ))}

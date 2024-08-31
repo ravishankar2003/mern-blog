@@ -11,7 +11,7 @@ const PostCard = ({ post }) => {
 
   return (
     <div className='group relative border border-teal-400 hover:border-teal-600 hover:border-2 overflow-hidden rounded-md sm:w-[350px]  transition-all m-2 p-2 shadow-md'>
-      <Link to={`/post/${post.slug}`}>
+      <Link to={`/mern-blog/post/${post.slug}`}>
         <img
           src={post.image}
           alt='post cover'
@@ -23,7 +23,7 @@ const PostCard = ({ post }) => {
           {truncatedTitle}
         </p>
         <Link
-  to={`/post/${post.slug}`}
+  to={`/mern-blog/post/${post.slug}`}
   className='hidden sm:block z-10 group-hover:bottom-0 absolute bottom-[-180px] left-0 right-0 border border-teal-400 text-teal-400 hover:bg-teal-400 hover:text-white transition-all duration-300 text-center py-2 rounded-md m-2'
 >
   Read Post

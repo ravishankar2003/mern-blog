@@ -33,7 +33,7 @@ const Signup = () => {
       const data = await res.json();
       
       if (res.ok) {
-        navigate('/sign-in')
+        navigate('/mern-blog/sign-in')
       } else {
         dispatch(signupfailure(data.message || 'Sign up failed.'));
       }
@@ -102,7 +102,7 @@ const Signup = () => {
           </form>
           <div className='flex gap-2 text-sm mt-2 px-6'>
             <span>Have an account?</span>
-            <Link to='/sign-in' className='text-blue-500'>Sign In</Link>
+            <Link to='/mern-blog/sign-in' className='text-blue-500'>Sign In</Link>
           </div>
         </div>
       </div>

@@ -28,7 +28,7 @@ export default function Home() {
           </p>
           <div className="mt-6">
             <Link
-              to="/search"
+              to="/mern-blog/search"
               className="px-6 py-3 bg-teal-600 text-white font-bold text-sm sm:text-base rounded-lg shadow-lg hover:bg-teal-700 transition duration-300"
             >
               Explore All Posts
@@ -49,7 +49,7 @@ export default function Home() {
               ))}
             </div>
             <Link
-              to={'/search'}
+              to={'/mern-blog/search'}
               className="text-lg text-teal-500 hover:underline text-center"
             >
               View all posts

@@ -24,13 +24,13 @@ const NavBar = () => {
     const urlParams = new URLSearchParams(location.search);
     urlParams.set("searchTerm" , searchTerm)
     const searchQuery = urlParams.toString();
-    navigate(`/search?${searchQuery}`);
+    navigate(`/mern-blog/search?${searchQuery}`);
 
   }
 
   return (
     <nav className='h-14 px-4 max-md:px-2 border-b-2 flex items-center justify-between bg-white shadow-sm fixed top-0 left-0 w-full z-50'>
-     <Link to='/' className='flex items-center space-x-1 text-md sm:text-xl font-semibold text-gray-900 dark:text-white'>
+     <Link to='/mern-blog' className='flex items-center space-x-1 text-md sm:text-xl font-semibold text-gray-900 dark:text-white'>
   <span className='px-3 pr-2 py-1 bg-gradient-to-r from-teal-500 to-blue-600 rounded-lg text-white'>
     Blog
   </span>
@@ -53,9 +53,9 @@ const NavBar = () => {
         </form>
       </div>
       <div className='hidden md:flex gap-8 font-semibold text-gray-900 dark:text-white'>
-        <Link to='/'>Home</Link>
-        <Link to='/search'>Posts</Link>
-        <Link to='/about'>About</Link>
+        <Link to='/mern-blog'>Home</Link>
+        <Link to='/mern-blog/search'>Posts</Link>
+        <Link to='/mern-blog/about'>About</Link>
       </div>
       <div className='flex items-center gap-4'>
         
@@ -63,7 +63,7 @@ const NavBar = () => {
           <Dropdown />
         ) : (
           <Link 
-            to='/sign-in'
+            to='/mern-blog/sign-in'
             className='border-2 px-4 py-2 rounded-lg font-semibold text-gray-900 border-gray-900 dark:border-white hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white'
           >
             Sign In

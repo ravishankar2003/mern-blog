@@ -22,19 +22,19 @@ const App = () => {
         <NavBar />
         <div className="flex-grow">
       <Routes>
-      <Route path='/' element={<Home />} />
-        <Route path='/sign-up' element ={<Signup />}/>
-        <Route path='/sign-in' element={<Signin/>} />
-        <Route path='/search' element={<Search/>} />
-        <Route path='/about' element = {<About/>}/>
+      <Route path='/mern-blog' element={<Home />} />
+        <Route path='/mern-blog/sign-up' element ={<Signup />}/>
+        <Route path='/mern-blog/sign-in' element={<Signin/>} />
+        <Route path='/mern-blog/search' element={<Search/>} />
+        <Route path='/mern-blog/about' element = {<About/>}/>
         <Route element = { <PrivateRoute/>}> 
-          < Route path = '/settings' element={<DashBoard/>} />
+          < Route path = '/mern-blog/settings' element={<DashBoard/>} />
         </Route>
         <Route element = { <PrivateadminRoute/>}> 
-          < Route path = '/createpost' element={<CreatePost/>} />
-          < Route path = '/updatepost/:postid' element={<UpdatePost/>} />
+          < Route path = '/mern-blog/createpost' element={<CreatePost/>} />
+          < Route path = '/mern-blog/updatepost/:postid' element={<UpdatePost/>} />
         </Route>
-        <Route path='/post/:postslug' element={<PostPage/>} />
+        <Route path='/mern-blog/post/:postslug' element={<PostPage/>} />
 
        </Routes>
        </div>

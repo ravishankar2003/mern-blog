@@ -33,7 +33,7 @@ const Dashsidebar = () => {
         className=" rounded-md block px-3 py-2 text-md text-gray-700 bg-gray-200"
     >
         {currentuser.username && (
-            <Link to='/settings?tab=profile' className='text-md font-semibold flex items-center justify-between'>
+            <Link to='/mern-blog/settings?tab=profile' className='text-md font-semibold flex items-center justify-between'>
             <span className='overflow-hidden text-ellipsis whitespace-nowrap'>
               {currentuser.username.length > 7 ? `${currentuser.username.substring(0, 7)}...` : currentuser.username}
             </span>
@@ -44,12 +44,12 @@ const Dashsidebar = () => {
         )}
     </div> 
     {currentuser.isadmin && 
-    <Link to='/settings?tab=posts' className="hover:shadow-md  rounded-md block font-semibold px-4 py-2 mt-1 text-md text-gray-700 bg-gray-200 
+    <Link to='/mern-blog/settings?tab=posts' className="hover:shadow-md  rounded-md block font-semibold px-4 py-2 mt-1 text-md text-gray-700 bg-gray-200 
         hover:bg-gray-300 hover:border-2 hover:border-gray-400 transition-colors duration-200 w-full text-center">
       Posts
     </Link>}
     {currentuser.isadmin && 
-    <Link to='/settings?tab=users' className="hover:shadow-md  rounded-md block font-semibold px-4 py-2 mt-1 text-md text-gray-700 bg-gray-200 
+    <Link to='/mern-blog/settings?tab=users' className="hover:shadow-md  rounded-md block font-semibold px-4 py-2 mt-1 text-md text-gray-700 bg-gray-200 
         hover:bg-gray-300 hover:border-2 hover:border-gray-400 transition-colors duration-200 w-full text-center">
       Users
     </Link>}

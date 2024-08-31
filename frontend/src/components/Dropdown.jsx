@@ -55,17 +55,17 @@ const Dropdown = () => {
             </span>
             {/* Additional links for small screens */}
             <div className="md:hidden ">
-              <Link to='/search' onClick={toggleDropdown} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+              <Link to='/mern-blog/search' onClick={toggleDropdown} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                 Posts
               </Link>
-              <Link to='/'onClick={toggleDropdown} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+              <Link to='/mern-blog/'onClick={toggleDropdown} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                 Home
               </Link>
-              <Link to='/about' onClick={toggleDropdown} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+              <Link to='/mern-blog/about' onClick={toggleDropdown} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                 About
               </Link>
             </div>
-            <Link to='/settings?tab=profile' onClick={toggleDropdown} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+            <Link to='/mern-blog/settings?tab=profile' onClick={toggleDropdown} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
               Profile
             </Link>
             <button onClick={handlesignout} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left">
