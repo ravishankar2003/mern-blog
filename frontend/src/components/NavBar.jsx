@@ -30,7 +30,7 @@ const NavBar = () => {
 
   return (
     <nav className='h-14 px-4 max-md:px-2 border-b-2 flex items-center justify-between bg-white shadow-sm fixed top-0 left-0 w-full z-50'>
-     <Link to='/mern-blog' className='flex items-center space-x-1 text-md sm:text-xl font-semibold text-gray-900 dark:text-white'>
+     <Link to='/mern-blog/' className='flex items-center space-x-1 text-md sm:text-xl font-semibold text-gray-900 dark:text-white'>
   <span className='px-3 pr-2 py-1 bg-gradient-to-r from-teal-500 to-blue-600 rounded-lg text-white'>
     Blog
   </span>
@@ -53,7 +53,7 @@ const NavBar = () => {
         </form>
       </div>
       <div className='hidden md:flex gap-8 font-semibold text-gray-900 dark:text-white'>
-        <Link to='/mern-blog'>Home</Link>
+        <Link to='/mern-blog/'>Home</Link>
         <Link to='/mern-blog/search'>Posts</Link>
         <Link to='/mern-blog/about'>About</Link>
       </div>
@@ -64,7 +64,7 @@ const NavBar = () => {
         ) : (
           <Link 
             to='/mern-blog/sign-in'
-            className='border-2 px-4 py-2 rounded-lg font-semibold text-gray-900 border-gray-900 dark:border-white hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white'
+            className='border-2 px-4 py-2 rounded-lg font-semibold text-gray-900 border-gray-400 dark:border-white hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:border-cyan-600'
           >
             Sign In
           </Link>

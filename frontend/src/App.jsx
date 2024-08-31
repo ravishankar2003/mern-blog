@@ -22,7 +22,7 @@ const App = () => {
         <NavBar />
         <div className="flex-grow">
       <Routes>
-      <Route path='/' element={<Home />} />
+      <Route path='/mern-blog/' element={<Home />} />
         <Route path='/mern-blog/sign-up' element ={<Signup />}/>
         <Route path='/mern-blog/sign-in' element={<Signin/>} />
         <Route path='/mern-blog/search' element={<Search/>} />
