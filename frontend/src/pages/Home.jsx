@@ -7,7 +7,7 @@ export default function Home() {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = await fetch(`http://localhost:3000/api/post/getposts?limit=${6}`);
+      const res = await fetch(`https://mern-blog-doqn.onrender.com/api/post/getposts?limit=${6}`);
       const data = await res.json();
       setPosts(data.posts);
     };

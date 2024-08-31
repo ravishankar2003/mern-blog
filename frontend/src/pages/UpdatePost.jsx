@@ -17,7 +17,7 @@ const UpdatePost = () => {
   useEffect(() => {
     const fetchPostInfo = async () => {
       try {
-        const res = await fetch(`http://localhost:3000/api/post/getposts?postid=${postid}`);
+        const res = await fetch(`https://mern-blog-doqn.onrender.com/api/post/getposts?postid=${postid}`);
         const data = await res.json();
 
         // Assuming data.posts is an array and the post you want is the first one
@@ -79,7 +79,7 @@ const UpdatePost = () => {
 
     try {
       const token = localStorage.getItem("access_token");
-      const res = await fetch(`http://localhost:3000/api/post/updatepost/${postid}/${currentuser._id}`, {
+      const res = await fetch(`https://mern-blog-doqn.onrender.com/api/post/updatepost/${postid}/${currentuser._id}`, {
         method: 'POST',
         credentials: 'include',
         headers: {

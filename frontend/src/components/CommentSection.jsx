@@ -15,7 +15,7 @@ const CommentSection = ({ postid }) => {
     useEffect(() => {
         const getComments = async () => {
           try {
-            const res = await fetch(`http://localhost:3000/api/comment/getcomments/${postid}`);
+            const res = await fetch(`https://mern-blog-doqn.onrender.com/api/comment/getcomments/${postid}`);
             if (res.ok) {
               const data = await res.json();
               setComments(data);
@@ -37,7 +37,7 @@ const CommentSection = ({ postid }) => {
 
         try{
         const token = localStorage.getItem('access_token')
-        const res = await fetch('http://localhost:3000/api/comment/create',{
+        const res = await fetch('https://mern-blog-doqn.onrender.com/api/comment/create',{
             method: 'POST',
             credentials: 'include',
             headers: {
@@ -71,7 +71,7 @@ const CommentSection = ({ postid }) => {
             return;
           }
           const token = localStorage.getItem("access_token")
-          const res = await fetch(`http://localhost:3000/api/comment/likecomment/${commentId}`, {
+          const res = await fetch(`https://mern-blog-doqn.onrender.com/api/comment/likecomment/${commentId}`, {
             method: 'PUT',
             credentials: 'include',
         headers: {

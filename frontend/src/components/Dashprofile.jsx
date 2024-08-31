@@ -60,7 +60,7 @@ const Dashprofile = () => {
       
         try {
           const token = localStorage.getItem("access_token");
-          const res = await fetch('http://localhost:3000/api/user/updateprofile', {
+          const res = await fetch('https://mern-blog-doqn.onrender.com/api/user/updateprofile', {
             method: 'POST',
             credentials: 'include',
             headers: { 
@@ -91,7 +91,7 @@ const Dashprofile = () => {
         seterr(null)
         setmsg(null)
         try {
-          const res = await fetch('http://localhost:3000/api/user/deleteprofile', {
+          const res = await fetch('https://mern-blog-doqn.onrender.com/api/user/deleteprofile', {
             method: 'DELETE',
             credentials: 'include',
             body: formdata,

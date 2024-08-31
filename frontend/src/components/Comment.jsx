@@ -13,7 +13,7 @@ const Comment = ({ com, onDeleteComment, onLike }) => {
     useEffect(() => {
         const fetchUserData = async () => {
             try {
-                const res = await fetch(`http://localhost:3000/api/user/getuser/${com.userid}`);
+                const res = await fetch(`https://mern-blog-doqn.onrender.com/api/user/getuser/${com.userid}`);
                 const data = await res.json();
                 if (res.ok) {
                     setUserData(data);
@@ -29,7 +29,7 @@ const Comment = ({ com, onDeleteComment, onLike }) => {
     const handleSave = async () => {
         try {
             const token = localStorage.getItem("access_token");
-            const res = await fetch(`http://localhost:3000/api/comment/editcomment/${com._id}`, {
+            const res = await fetch(`https://mern-blog-doqn.onrender.com/api/comment/editcomment/${com._id}`, {
                 method: 'POST',
                 credentials: 'include',
                 headers: {
@@ -58,7 +58,7 @@ const Comment = ({ com, onDeleteComment, onLike }) => {
     const onDelete = async () => {
         try {
             const token = localStorage.getItem("access_token");
-            const res = await fetch(`http://localhost:3000/api/comment/deletecomment/${com._id}`, {
+            const res = await fetch(`https://mern-blog-doqn.onrender.com/api/comment/deletecomment/${com._id}`, {
                 method: 'DELETE',
                 credentials: 'include',
                 headers: {

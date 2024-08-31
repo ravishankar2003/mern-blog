@@ -11,7 +11,7 @@ const Dashpposts = () => {
     const fetch_posts = async () => {
       try {
         setloading(true)
-        const res = await fetch(`http://localhost:3000/api/post/getposts?userId=${currentuser._id}`)
+        const res = await fetch(`https://mern-blog-doqn.onrender.com/api/post/getposts?userId=${currentuser._id}`)
         const data = await res.json()
 
         if (res.ok) {
@@ -35,7 +35,7 @@ const Dashpposts = () => {
 
     try {
       const token = localStorage.getItem("access_token");
-      const res = await fetch(`http://localhost:3000/api/post/delete/${postid}/${currentuser._id}`, {
+      const res = await fetch(`https://mern-blog-doqn.onrender.com/api/post/delete/${postid}/${currentuser._id}`, {
         method: 'DELETE',
         credentials: 'include',
         headers: {
