@@ -19,7 +19,7 @@ app.use(express.json())
 
 
 app.use(cors({
-  origin: 'https://ravishankar2003.github.io/mern-blog',
+  origin: 'https://ravishankar2003.github.io',
   credentials:true
 }));
 
