@@ -56,7 +56,7 @@ export default function Search() {
     urlParams.set('sort', sidebarData.sort);
     console.log(urlParams)
     const searchQuery = urlParams.toString();
-    navigate(`/search?${searchQuery}`);
+    navigate(`/mern-blog/search?${searchQuery}`);
   };
 
   return (
