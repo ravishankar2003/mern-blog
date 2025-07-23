@@ -58,6 +58,7 @@ const CommentSection = ({ postid }) => {
           }
     } catch (error) {
             console.log(error.message)
+            console.log(error)
             setCommentError(error.message)
     }
     };
