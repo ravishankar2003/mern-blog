@@ -5,13 +5,14 @@ import { useSelector, useDispatch } from 'react-redux';
 import { signinstart, signinsuccess, signinfailure } from '../reduxslice/user/userSlice.js';
 
 
+const navigate = useNavigate();
+
 const Signin = () => {
   const { loading, error: errorMessage } = useSelector((state) => state.user);
   const [formdata, setformdata] = useState({
     email: '',
     password: ''
   });
-  const navigate = useNavigate();
   const dispatch = useDispatch();
   
   const handlechange = (e) => {
@@ -38,7 +39,10 @@ const Signin = () => {
         const { access_token , ...rest} = data
         localStorage.setItem("access_token", access_token)
         dispatch(signinsuccess(rest));
+        console.log("About to navigate");
         navigate('/');
+        console.log("Navigated?");
+
       } else {
         dispatch(signinfailure(data.message || 'Something went wrong'));
       }
