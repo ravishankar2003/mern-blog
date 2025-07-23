@@ -29,7 +29,7 @@ export default function Search() {
     const fetchPosts = async () => {
       setLoading(true);
       const searchQuery = urlParams.toString();
-      const res = await fetch(`https://mern-blog-doqn.onrender.com/api/post/getposts?${searchQuery}`);
+      const res = await fetch(`https://https://mern-blog-digr.onrender.com/api/post/getposts?${searchQuery}`);
       if (!res.ok) {
         setLoading(false);
         return;

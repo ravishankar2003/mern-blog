@@ -57,7 +57,7 @@ const CreatePost = () => {
       
         try {
           const token = localStorage.getItem("access_token");
-          const res = await fetch('https://mern-blog-doqn.onrender.com/api/post/create', {
+          const res = await fetch('https://https://mern-blog-digr.onrender.com/api/post/create', {
             method: 'POST',
             credentials: 'include',
             headers: { 
