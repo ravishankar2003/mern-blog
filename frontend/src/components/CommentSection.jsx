@@ -67,7 +67,7 @@ const CommentSection = ({ postid }) => {
     const handleLike = async (commentId) => {
         try {
           if (!currentuser) {
-            navigate('/mern-blog/sign-in');
+            navigate('/sign-in');
             return;
           }
           const token = localStorage.getItem("access_token")
@@ -109,7 +109,7 @@ const CommentSection = ({ postid }) => {
                         alt='Profile'
                     />
                     <Link
-                        to={'/mern-blog/dashboard?tab=profile'}
+                        to={'/dashboard?tab=profile'}
                         className='text-xs text-cyan-600 hover:underline'
                     >
                         @{currentuser.username}
@@ -118,7 +118,7 @@ const CommentSection = ({ postid }) => {
             ) : (
                 <div className='text-sm text-teal-500 my-5 flex gap-1'>
                     You must be signed in to comment.
-                    <Link className='text-blue-500 hover:underline' to={'/mern-blog/sign-in'}>
+                    <Link className='text-blue-500 hover:underline' to={'/sign-in'}>
                         Sign In
                     </Link>
                 </div>
