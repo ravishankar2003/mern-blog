@@ -38,7 +38,7 @@ const Signin = () => {
         const { access_token , ...rest} = data
         localStorage.setItem("access_token", access_token)
         dispatch(signinsuccess(rest));
-        navigate('');
+        navigate('/');
       } else {
         dispatch(signinfailure(data.message || 'Something went wrong'));
       }
