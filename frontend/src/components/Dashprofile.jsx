@@ -106,7 +106,7 @@ const Dashprofile = () => {
             setmsg('Account deleted successfully.');
             seterr(null)
             dispatch(signoutSuccess())
-            navigate('/mern-blog/sign-up')
+            navigate('/sign-up')
           
           }
         } catch (error) {
@@ -168,7 +168,7 @@ const Dashprofile = () => {
             Update Details
             </button>
             {currentuser.isadmin && 
-            <Link to='/mern-blog/createpost'>
+            <Link to='/createpost'>
             <button 
               className=" shadow-md  w-full border-[2px] border-teal-600 hover:border-none hover:mt-1 hover:text-white py-2 px-4 
                 rounded-md hover:bg-gradient-to-b hover:from-teal-500 hover:to-blue-600"
