@@ -7,7 +7,7 @@ export default function Home() {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = await fetch(`https://https://mern-blog-digr.onrender.com/api/post/getposts?limit=${6}`);
+      const res = await fetch(`https://mern-blog-digr.onrender.com/api/post/getposts?limit=${6}`);
       const data = await res.json();
       setPosts(data.posts);
     };

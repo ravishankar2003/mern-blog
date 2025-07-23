@@ -12,7 +12,7 @@ const DashUsers = () => {
       try {
         setloading(true)
         const token = localStorage.getItem("access_token");
-        const res = await fetch('https://https://mern-blog-digr.onrender.com/api/user/getusers',{
+        const res = await fetch('https://mern-blog-digr.onrender.com/api/user/getusers',{
             method: 'GET',
             credentials: 'include',
             headers: {
@@ -46,7 +46,7 @@ const DashUsers = () => {
 
     try {
       const token = localStorage.getItem("access_token");
-      const res = await fetch(`https://https://mern-blog-digr.onrender.com/api/user/deleteuser/${userid}`, {
+      const res = await fetch(`https://mern-blog-digr.onrender.com/api/user/deleteuser/${userid}`, {
         method: 'DELETE',
         credentials: 'include',
         headers: {
